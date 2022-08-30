@@ -18,7 +18,7 @@ class Find
             'id' => [
                 'required',
                 'integer',
-                'exists:people,id',
+                'exists:users,id',
             ],
         ]);
 
