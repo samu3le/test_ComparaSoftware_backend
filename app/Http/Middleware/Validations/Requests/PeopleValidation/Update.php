@@ -27,7 +27,7 @@ class Update
             'last_name' => ['required', 'string', 'max:50'],
             'type_document' => [
                 'required',
-                'string',
+                'integer',
                 'in:'.implode(",", array_keys(People::TYPE_DOCUMENT)),
             ],
             'document' => ['required', 'string', 'max:10'],
@@ -42,23 +42,23 @@ class Update
             ],
             'gender' => [
                 'required',
-                'string',
+                'integer',
                 'in:'.implode(",", array_keys(People::GENDER)),
             ],
             'birth_date' => ['required', 'date'],
             'city' => [
                 'required',
-                'string',
+                'integer',
                 'in:'.implode(",", array_keys(People::CITIES)),
             ],
             'marital_status' => [
                 'required',
-                'string',
+                'integer',
                 'in:'.implode(",", array_keys(People::MARITAL_STATUS)),
             ],
             'occupation' => [
                 'required',
-                'string',
+                'integer',
                 'in:'.implode(",", array_keys(People::OCCUPATIONS)),
             ],
             'area' => [
