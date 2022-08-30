@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware\Validations\Requests\UserValidation;
+namespace App\Http\Middleware\Validations\Requests\PeopleValidation;
 
 use Closure;
 use Illuminate\Http\Request;
@@ -18,7 +18,7 @@ class Find
             'id' => [
                 'required',
                 'integer',
-                'exists:users,id',
+                'exists:people,id',
             ],
         ]);
 

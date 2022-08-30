@@ -17,11 +17,17 @@ Route::prefix('people')->middleware([
         Requests\PeopleValidation\Create::class
     ])
     ->post('/', [PeopleController::class, 'create']);
-    Route::delete('/{id}', [PeopleController::class, 'destroy']);
+    Route::middleware([
+        Requests\PeopleValidation\Find::class
+    ])
+    ->delete('/{id}', [PeopleController::class, 'destroy']);
     Route::middleware([
         Validations\Requests\Pagination::class,
     ])->get('/',  [PeopleController::class, 'index']);
-    Route::get('/{id}', [PeopleController::class, 'show']);
+    Route::middleware([
+      Requests\PeopleValidation\Find::class
+  ])
+  ->get('/{id}', [PeopleController::class, 'show']);
     Route::middleware([
         Requests\PeopleValidation\Update::class
     ])
