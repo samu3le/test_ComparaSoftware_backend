@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\People;
 
+use App\Services\Response;
+
 
 class PeopleController extends Controller
 {
@@ -25,9 +27,11 @@ class PeopleController extends Controller
             $page // current page, default 1
         );
 
-        return response()->json([
-            'data' => $people,
-        ]);
+        return Response::OK(
+            data: [
+                'people' => $people,
+            ],
+        );
     }
 
     public function create(Request $request)
@@ -36,10 +40,12 @@ class PeopleController extends Controller
 
         $people = People::create($body);
 
-        return response()->json([
-            'message' => 'People created successfully',
-            'people' => $people,
-        ]);
+        return Response::CREATED(
+            message: 'People created successfully',
+            data: [
+                'people' => $people,
+            ]
+        );
     }
 
     public function show(Request $request)
@@ -50,10 +56,12 @@ class PeopleController extends Controller
 
         $people = People::find($id);
 
-        return response()->json([
-            'message' => 'People found successfully',
-            'people' => $people,
-        ]);
+        return Response::OK(
+            message: 'People found successfully.',
+            data: [
+                'people' => $people,
+            ],
+        );
     }
 
     public function update(Request $request)
@@ -67,10 +75,12 @@ class PeopleController extends Controller
 
         $people->update($body);
 
-        return response()->json([
-            'message' => 'People updated successfully',
-            'people' => $people,
-        ]);
+        return Response::OK(
+            message: 'People updated successfully.',
+            data: [
+                'people' => $people,
+            ],
+        );
     }
 
     public function destroy(Request $request)
@@ -81,8 +91,8 @@ class PeopleController extends Controller
         $people = People::find($id);
         $people->delete();
 
-        return response()->json([
-            'message' => 'People deleted successfully',
-        ]);
+        return Response::OK(
+            message: 'People deleted successfully',
+        );
     }
 }
