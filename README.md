@@ -20,7 +20,3 @@ PostgreSQL 14.2
 ## Postman Collection
 
 [Archivo .json](/public/people-app.postman_collection.json)
-
-## Database structure
-
-![Diagram ERD](/public/diagrams/erd.png)
