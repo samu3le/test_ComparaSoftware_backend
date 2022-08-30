@@ -16,12 +16,12 @@
 					"urlencoded": [
 						{
 							"key": "name",
-							"value": "Pablo",
+							"value": "Samuel",
 							"type": "text"
 						},
 						{
 							"key": "last_name",
-							"value": "Contreras",
+							"value": "Espinoza",
 							"type": "text"
 						},
 						{
@@ -46,7 +46,7 @@
 						},
 						{
 							"key": "email",
-							"value": "pacg31@gmail.com",
+							"value": "samuel.espinoza@comparasoftware.com",
 							"type": "text"
 						},
 						{
@@ -92,7 +92,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8001/api/people",
+					"raw": "http://127.0.0.1:8000/api/people",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -100,7 +100,7 @@
 						"0",
 						"1"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"api",
 						"people"
@@ -119,12 +119,12 @@
 					"urlencoded": [
 						{
 							"key": "name",
-							"value": "Pablo",
+							"value": "Samuel",
 							"type": "text"
 						},
 						{
 							"key": "last_name",
-							"value": "Contreras",
+							"value": "Espinoza",
 							"type": "text"
 						},
 						{
@@ -149,7 +149,7 @@
 						},
 						{
 							"key": "email",
-							"value": "pacg1@gmail.com",
+							"value": "samuel@mail.com",
 							"type": "text"
 						},
 						{
@@ -190,7 +190,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8001/api/people/4",
+					"raw": "http://127.0.0.1:8000/api/people/4",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -198,7 +198,7 @@
 						"0",
 						"1"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"api",
 						"people",
@@ -215,81 +215,10 @@
 				"header": [],
 				"body": {
 					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "name",
-							"value": "Pablo",
-							"type": "text"
-						},
-						{
-							"key": "last_name",
-							"value": "Contreras",
-							"type": "text"
-						},
-						{
-							"key": "type_document",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "document",
-							"value": "1524875",
-							"type": "text"
-						},
-						{
-							"key": "address",
-							"value": "Av Miraflores",
-							"type": "text"
-						},
-						{
-							"key": "phone",
-							"value": "15478526",
-							"type": "text"
-						},
-						{
-							"key": "email",
-							"value": "pacg31@gmail.com",
-							"type": "text"
-						},
-						{
-							"key": "gender",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "birth_date",
-							"value": "1991-08-08",
-							"type": "text"
-						},
-						{
-							"key": "city",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "marital_status",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "ocupation",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "area",
-							"value": "2",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "1500",
-							"type": "text"
-						}
-					]
+					"urlencoded": []
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8001/api/people/1",
+					"raw": "http://127.0.0.1:8000/api/people/1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -297,7 +226,7 @@
 						"0",
 						"1"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"api",
 						"people",
@@ -313,7 +242,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8001/api/people?page=2&per_page=3",
+					"raw": "http://127.0.0.1:8000/api/people?page=2&per_page=3",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -321,7 +250,7 @@
 						"0",
 						"1"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"api",
 						"people"
@@ -346,7 +275,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:8001/api/people/3",
+					"raw": "http://127.0.0.1:8000/api/people/3",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -354,7 +283,7 @@
 						"0",
 						"1"
 					],
-					"port": "8001",
+					"port": "8000",
 					"path": [
 						"api",
 						"people",
