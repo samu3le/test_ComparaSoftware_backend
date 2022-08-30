@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "a2c05cf7-d237-4515-bf0f-bcbada3fd6cc",
+		"name": "people app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15816432"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pablo",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Contreras",
+							"type": "text"
+						},
+						{
+							"key": "type_document",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "document",
+							"value": "1524875",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Av Miraflores",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "15478526",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "pacg31@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "1991-08-08",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "marital_status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "occupation",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1500",
+							"type": "text"
+						},
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/people",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pablo",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Contreras",
+							"type": "text"
+						},
+						{
+							"key": "type_document",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "document",
+							"value": "1524875",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Av Miraflores",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "15478526",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "pacg1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "1991-08-08",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "marital_status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "occupation",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/people/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"people",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pablo",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Contreras",
+							"type": "text"
+						},
+						{
+							"key": "type_document",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "document",
+							"value": "1524875",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Av Miraflores",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "15478526",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "pacg31@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "1991-08-08",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "marital_status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ocupation",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/people/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"people",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/people?page=2&per_page=3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"people"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "per_page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/api/people/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"api",
+						"people",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
