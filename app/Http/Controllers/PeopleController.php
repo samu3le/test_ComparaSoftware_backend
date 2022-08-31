@@ -20,6 +20,7 @@ class PeopleController extends Controller
 
         $people = new People();
 
+        $people = $people->orderBy('created_at', 'ASC');
         $people = $people->paginate(
             $per_page, // per page (may be get it from request)
             ['*'], // columns to select from table (default *, means all fields)
@@ -50,11 +51,9 @@ class PeopleController extends Controller
 
     public function show(Request $request)
     {
-        $parameters = $request['parameters'];
+        $instances = $request['instances'];
 
-        $id = $parameters['id'];
-
-        $people = People::find($id);
+        $people = $instances['people'];
 
         return Response::OK(
             message: 'People found successfully.',
@@ -85,10 +84,9 @@ class PeopleController extends Controller
 
     public function destroy(Request $request)
     {
-        $parameters = $request['parameters'];
-        $id = $parameters['id'];
+        $instances = $request['instances'];
 
-        $people = People::find($id);
+        $people = $instances['people'];
         $people->delete();
 
         return Response::OK(

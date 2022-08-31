@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit5c252eaef010ffbe92870c8a001f1f45
+class ComposerStaticInita97875c1b60200ff2fe540e7981b616f
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -496,9 +496,12 @@ class ComposerStaticInit5c252eaef010ffbe92870c8a001f1f45
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\ConfigController' => __DIR__ . '/../..' . '/app/Http/Controllers/ConfigController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\PeopleController' => __DIR__ . '/../..' . '/app/Http/Controllers/PeopleController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
+        'App\\Http\\Middleware\\DataParser' => __DIR__ . '/../..' . '/app/Http/Middleware/DataParser.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -506,13 +509,20 @@ class ComposerStaticInit5c252eaef010ffbe92870c8a001f1f45
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
+        'App\\Http\\Middleware\\Validations\\Requests\\Pagination' => __DIR__ . '/../..' . '/app/Http/Middleware/Validations/Requests/Pagination.php',
+        'App\\Http\\Middleware\\Validations\\Requests\\PeopleValidation\\Create' => __DIR__ . '/../..' . '/app/Http/Middleware/Validations/Requests/PeopleValidation/Create.php',
+        'App\\Http\\Middleware\\Validations\\Requests\\PeopleValidation\\Find' => __DIR__ . '/../..' . '/app/Http/Middleware/Validations/Requests/PeopleValidation/Find.php',
+        'App\\Http\\Middleware\\Validations\\Requests\\PeopleValidation\\Update' => __DIR__ . '/../..' . '/app/Http/Middleware/Validations/Requests/PeopleValidation/Update.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\People' => __DIR__ . '/../..' . '/app/Models/People.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Services\\Response' => __DIR__ . '/../..' . '/app/Services/Response.php',
+        'App\\Services\\Validator' => __DIR__ . '/../..' . '/app/Services/Validator.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
@@ -5573,10 +5583,10 @@ class ComposerStaticInit5c252eaef010ffbe92870c8a001f1f45
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit5c252eaef010ffbe92870c8a001f1f45::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit5c252eaef010ffbe92870c8a001f1f45::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit5c252eaef010ffbe92870c8a001f1f45::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit5c252eaef010ffbe92870c8a001f1f45::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita97875c1b60200ff2fe540e7981b616f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita97875c1b60200ff2fe540e7981b616f::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInita97875c1b60200ff2fe540e7981b616f::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInita97875c1b60200ff2fe540e7981b616f::$classMap;
 
         }, null, ClassLoader::class);
     }

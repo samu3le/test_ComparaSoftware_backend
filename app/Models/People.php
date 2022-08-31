@@ -24,6 +24,20 @@ class People extends Model
         'occupation',
         'area',
         'salary',
+        'is_active',
+    ];
+
+    protected $casts = [
+        'type_document' => 'integer',
+        'gender' => 'integer',
+        'birth_date' => 'date:Y-m-d',
+        'city' => 'integer',
+        'marital_status' => 'integer',
+        'occupation' => 'integer',
+        'salary' => 'float',
+        'is_active' => 'boolean',
+        'created_at' => 'date:Y-m-dTH:i:s',
+        'updated_at' => 'date:Y-m-dTH:i:s',
     ];
 
     const TYPE_DOCUMENT = [

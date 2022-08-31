@@ -292,6 +292,23 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "config get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/config",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"config"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

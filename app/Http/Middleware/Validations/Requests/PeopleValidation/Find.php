@@ -9,12 +9,16 @@ use Illuminate\Support\Facades\Validator;
 
 use App\Services\Response;
 
+use App\Models\People;
+
 
 class Find
 {
     public function handle(Request $request, Closure $next)
     {
-        $validator = Validator::make($request['query'], [
+        $parameters = $request['parameters'];
+
+        $validator = Validator::make($parameters, [
             'id' => [
                 'required',
                 'integer',
@@ -29,8 +33,14 @@ class Find
             );
         }
 
+        $id = $parameters['id'];
+        $people = People::find($id);
+
         $request->merge([
-            'query' => $validator->validated(),
+            'parameters' => $validator->validated(),
+            'instances' => [
+                'people' => $people,
+            ],
         ]);
 
         return $next($request);

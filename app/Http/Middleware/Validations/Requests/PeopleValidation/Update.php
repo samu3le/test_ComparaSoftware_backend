@@ -15,14 +15,20 @@ class Update
 {
     public function handle(Request $request, Closure $next)
     {
+        $instances = $request['instances'];
+        $people = $instances['people']->toArray();
+
         $parameters = $request['parameters'];
         $id = $parameters['id'];
 
         $body = $request['body'];
-        $body['id'] = $id;
+        foreach ($people as $key => $value) {
+            if (!isset($body[$key])) {
+                $body[$key] = $people[$key];
+            }
+        }
 
         $validator = Validator::make($body, [
-            'id' => ['required','integer','exists:people,id'],
             'name' => ['required', 'string', 'max:50'],
             'last_name' => ['required', 'string', 'max:50'],
             'type_document' => [
